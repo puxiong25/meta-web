@@ -1,0 +1,20 @@
+{
+  "name": "@metaweb/common",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "module": "dist/index.esm.js",
+  "publishConfig": {
+    "main": "dist/index.js"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "author": "luyin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:puxiong25/meta-web.git"
+  }
+}

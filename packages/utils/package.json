@@ -1,0 +1,27 @@
+{
+  "name": "@metaweb/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "module": "dist/index.esm.js",
+  "publishConfig": {
+    "main": "dist/index.js"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "author": "luyin",
+  "license": "ISC",
+  "dependencies": {
+    "@types/ua-parser-js": "^0.7.36",
+    "ua-parser-js": "1.0.32",
+    "@metaweb/common": "workspace:*",
+    "@metaweb/core": "workspace:*",
+    "@metaweb/types": "workspace:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:puxiong25/meta-web.git"
+  }
+}
