@@ -9,10 +9,6 @@ import metaWeb from '../../packages/core/src';
 import performance from '../../packages/performance/src';
 import recordscreen from '../../packages/recordscreen/src';
 
-// import metaWeb from '@metaWeb/core';
-// import performance from '@metaWeb/performance';
-// import recordscreen from '@metaWeb/recordscreen';
-
 Vue.use(metaWeb, {
   dsn: 'http://localhost:8080/reportData', // 上报的地址
   apikey: 'abcd', // 项目唯一的id

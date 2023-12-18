@@ -1,16 +1,16 @@
 <template>
   <div class="home">
     <el-row>
-      <el-button type="primary" @click="codeErr">js错误</el-button>
-      <el-button type="success" @click="asyncError">异步错误</el-button>
-      <el-button type="danger" @click="promiseErr">promise错误</el-button>
+      <el-button type="primary" @click="codeErr" round>js错误</el-button>
+      <el-button type="success" @click="asyncError" round>异步错误</el-button>
+      <el-button type="danger" @click="promiseErr" round>promise错误</el-button>
       <!-- </el-row>
     <el-row> -->
-      <el-button type="info" @click="xhrError">xhr请求报错</el-button>
-      <el-button type="warning" @click="fetchError">fetch请求报错</el-button>
+      <el-button type="info" @click="xhrError" round>xhr请求报错</el-button>
+      <el-button type="warning" @click="fetchError" round>fetch请求报错</el-button>
       <!-- </el-row>
     <el-row> -->
-      <el-button type="danger" @click="resourceError">加载资源报错</el-button>
+      <el-button type="danger" @click="resourceError" round>加载资源报错</el-button>
     </el-row>
     <p class="error">报错统计</p>
     <el-table :data="tableData" style="width: 100%">
