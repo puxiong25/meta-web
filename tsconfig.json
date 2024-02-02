@@ -26,6 +26,7 @@
       "@metaweb/*": ["packages/*/src"]
     },
     "jsx": "react",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowJs": true
   }
 }

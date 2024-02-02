@@ -2,12 +2,12 @@
   <div id="app">
     <template>
       <div class="header">
-        <img class="logo" src="./assets/pp.png" alt="logo" />
+        <img class="logo" src="./assets/pp2.webp" alt="logo" />
         <h1 class="title">前端异常监控与定位</h1>
       </div>
       <nav>
-        <!-- <router-link to="/">Home</router-link> | -->
-        <!-- <router-link to="/about">About</router-link> -->
+        <router-link to="/">第一页</router-link> |
+        <router-link to="/about">第二页</router-link>
       </nav>
       <router-view />
     </template>
@@ -28,8 +28,8 @@
     padding: 10px 0px;
     height: 60px;
     text-align: left;
-    background-color: #ffffff;
-    border-bottom: 1px solid #eee;
+    /* background-color: #ffffff;
+    border-bottom: 1px solid #eee; */
     display: flex;
     align-items: center;
     position: sticky;
@@ -37,7 +37,7 @@
     z-index: 1;
     .logo {
       width: 107px;
-      height: 81px;
+      height: 107px;
     }
     .title {
       margin-left: 10px;

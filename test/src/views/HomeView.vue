@@ -1,19 +1,19 @@
 <template>
   <div class="home">
     <el-row>
-      <el-button type="primary" @click="codeErr" round>js错误</el-button>
-      <el-button type="success" @click="asyncError" round>异步错误</el-button>
-      <el-button type="danger" @click="promiseErr" round>promise错误</el-button>
+      <el-button @click="codeErr" round icon="el-icon-thumb">js错误</el-button>
+      <el-button @click="asyncError" round icon="el-icon-thumb">异步错误</el-button>
+      <el-button @click="promiseErr" round icon="el-icon-thumb">promise错误</el-button>
       <!-- </el-row>
     <el-row> -->
-      <el-button type="info" @click="xhrError" round>xhr请求报错</el-button>
-      <el-button type="warning" @click="fetchError" round>fetch请求报错</el-button>
+      <el-button @click="xhrError" round icon="el-icon-thumb">xhr请求报错</el-button>
+      <el-button @click="fetchError" round icon="el-icon-thumb">fetch请求报错</el-button>
       <!-- </el-row>
     <el-row> -->
-      <el-button type="danger" @click="resourceError" round>加载资源报错</el-button>
+      <el-button @click="resourceError" round icon="el-icon-thumb">加载资源报错</el-button>
     </el-row>
     <p class="error">报错统计</p>
-    <el-table :data="tableData" style="width: 100%">
+    <el-table :data="tableData" style="width: 100%" border>
       <el-table-column type="index" width="50"></el-table-column>
       <el-table-column prop="message" label="报错信息" width="300"> </el-table-column>
       <el-table-column prop="pageUrl" label="报错页面"> </el-table-column>
@@ -258,10 +258,11 @@ export default {
 <style lang="less">
 .error {
   margin-top: 20px;
-  height: 30px;
-  line-height: 30px;
+  height: 50px;
+  line-height: 50px;
   font-weight: 800;
-  background-color: #ebeef5;
+  background-color: #606266;
+  color: white;
 }
 .el-row {
   text-align: left;
