@@ -8,6 +8,7 @@ import 'element-ui/lib/theme-chalk/index.css';
 import metaWeb from '../../packages/core/src';
 import performance from '../../packages/performance/src';
 import recordscreen from '../../packages/recordscreen/src';
+import '@wangeditor/editor/dist/css/style.css';
 
 Vue.use(metaWeb, {
   dsn: 'http://localhost:8080/reportData', // 上报的地址

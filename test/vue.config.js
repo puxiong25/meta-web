@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 module.exports = {
   devServer: {
     proxy: {
@@ -29,5 +30,14 @@ module.exports = {
         },
       ],
     },
+    devtool: process.env.NODE_ENV === 'dev' ? 'source-map' : undefined,
+    // plugins: [
+    //   new webpack.ProvidePlugin({
+    //     $: 'jquery',
+    //     jQuery: 'jquery',
+    //     jquery: 'jquery',
+    //     'windows.jQuery': 'jquery',
+    //   }),
+    // ],
   },
 };

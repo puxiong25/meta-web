@@ -29,6 +29,8 @@ export class TransportData {
     this.uuid = generateUUID(); // 每次页面加载的唯一标识
   }
   beacon(url: string, data: any): boolean {
+    // console.log('navigator.sendBeacon(url, JSON.stringify(data));  url', url);
+    // console.log('navigator.sendBeacon(url, JSON.stringify(data)); data', data);
     return navigator.sendBeacon(url, JSON.stringify(data));
   }
   imgRequest(data: ReportData, url: string): void {
